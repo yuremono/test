@@ -1,0 +1,95 @@
+@charset "utf-8";
+/*
+Theme Name: myportfolio
+*/
+@media screen and (max-width: 600px){
+    
+  /* メニューボタン追加 */
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; left: 0;
+    height: 10vh;
+    z-index: 10;
+    mix-blend-mode: difference;
+    width: 100%;
+    padding: 0 5%;
+  }
+  header.open{
+    background-image: linear-gradient(
+      to bottom, #fff , #efefef);
+    mix-blend-mode: normal;
+  }
+  header h1{
+    margin-left: 0;
+    max-width: 144px;
+  }
+  .menu-btn{
+    width: 35px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .menu-btn span{
+    display: block;
+    width: 35px;
+    height: 3px;
+    border: solid 1px #fff;
+    box-sizing: content-box;
+    background-color: #000;
+    border-radius: 40%;
+    transition: .5s;
+    transform-origin: left;
+  }
+  .menu-btn.open .menu-btn__top{
+    transform: rotate(-336deg);	}
+  .menu-btn.open .menu-btn__bottom{
+    transform: rotate(336deg);	}
+  nav{
+    position: fixed;
+    z-index: 100;
+    top: 10vh;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%)
+      rotateX(180deg);
+    transition: .5s;
+    transform-origin: top;
+    backface-visibility: hidden;
+  }
+  nav.open{
+    transform: translateX(-50%) rotateX(0deg);
+  }
+  #slider, #topicpath {
+    padding-top: 10vh;
+  }
+
+  #sub ul{
+    flex-direction: column;
+    width: 100%
+  }
+  .sub__banner{
+    width: 70%;
+    margin: 15px auto;
+  }
+
+  /* 展示会 exhibition */
+  .about__inner{ flex-direction: column; }
+  .about__img {
+    width: 100%; height: 100%;
+    order: 1;
+    }
+  .about p {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* 作品紹介 */
+  .pictures{ flex-direction: column; }
+  .pictures img{ width: 100%; }
+
+}

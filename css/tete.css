@@ -1,0 +1,9 @@
+.headline {
+  font-size: 3.2vmax;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-color: #777;
+  text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.4666666667);
+  animation-timing-function: cubic-bezier(0.4, 0, 0, 1);
+}

@@ -1,0 +1,65 @@
+@charset "utf-8";
+/*
+Theme Name: myportfolio
+*/
+@media screen and (max-width: 960px){
+  .nav__items{ flex-wrap: wrap; }
+  .nav__items	li{	width: 50%; }
+  #contents{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  #main {
+    width: 90%;
+    margin: 0 auto 30px auto;
+  }
+  #sub{
+    width: 100%;
+
+  }
+  #sub ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 3%;
+    padding-top: 60px;
+    margin: 0;
+    background-image: linear-gradient(
+      to bottom, #fbfbfb , #ebebeb 50%);
+  }
+  .sub__banner{ width: 45%; }
+  .sub__banner img { margin-bottom: 30px; }
+  .footer{
+    background-color: #ebebeb;
+    margin-top: 0;
+  }
+  .footer__pagetop a { margin: 0 auto; }
+  .footer__info{
+    background-image: none;
+    box-shadow: none;
+  }
+
+  /* トップindex */
+  .topics ul li {
+    padding: 0 0 20px 0;
+  }
+  .topics ul li time {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* 作品紹介gallery */
+  .pictures { column-gap: 2%; }
+
+  /* 前売りtickets */
+  form{ font-size: 2.0rem; }
+  input[required], textarea{
+    width: 100%;
+  }
+  .px-10{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+}

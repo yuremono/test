@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* =========================================== */
+/* TextアニメーションCSS コード */
+/* =========================================== */
+.st1 {
+  stroke: #000; /* 文字色 */
+  fill: none; /* 塗りつぶし無し */
+  stroke-width: 2.5; /* 文字の太さ */
+  stroke-dasharray: 4000; /* 破線の間隔 */
+  stroke-dashoffset: 4000; /* 破線の開始位置 */
+  -webkit-animation: DASH 8s forwards;
+          animation: DASH 8s forwards; /* アニメーション */
+}
+
+.logo1 {
+  stroke: #000;
+  fill: none;
+  stroke-width: 2.5;
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 4000;
+  animation: DASH 8s ease-in-out alternate 0s forwards;
+  animation-delay: 3s;
+  -webkit-animation: DASH 8s ease-in-out alternate 0s forwards;
+  -webkit-animation-delay: 3s;
+}
+
+.logo2 {
+  stroke: #000;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 4000;
+  animation: DASH 1s ease-in-out alternate 0s forwards;
+  animation-delay: 4s;
+  -webkit-animation: DASH 1s ease-in-out alternate 0s forwards;
+  -webkit-animation-delay: 4s;
+}
+
+@keyframes DASH {
+  0% {
+    stroke-dashoffset: 4000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes DASH {
+  0% {
+    stroke-dashoffset: 4000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}/*# sourceMappingURL=test.css.map */

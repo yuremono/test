@@ -1,0 +1,64 @@
+.pace-done #global-container {
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  opacity: 1;
+}
+
+#global-container {
+  opacity: 0;
+}
+
+.pace {
+  z-index: 100;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: brown;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.pace .pace-progress {
+  -webkit-transform: none !important;
+          transform: none !important;
+  text-align: center;
+}
+
+.pace .pace-progress::after {
+  content: attr(data-progress-text);
+  display: block;
+  font-weight: 100;
+  font-size: 2em;
+  font-family: 'Helvetica Neue', 'Yu Gothic', 'Meiryo', sans-serif;
+  color: #535353;
+}
+
+.pace.pace-inactive {
+  opacity: 0;
+}
+
+.pace-progress-inner {
+  height: 100vh;
+  background-color: #904669;
+  background: url(img/illusory_264.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  margin: 14vh auto;
+  width: 43%;
+  max-width: 500px;
+  -webkit-animation: stamping 1s;
+          animation: stamping 1s;
+  z-index: 100;
+  -webkit-transition: width .5s, top .5s, left .5s,  -webkit-transform 5s;
+  transition: width .5s, top .5s, left .5s,  -webkit-transform 5s;
+  transition: width .5s, top .5s, left .5s,  transform 5s;
+  transition: width .5s, top .5s, left .5s,  transform 5s, -webkit-transform 5s;
+}
+/*# sourceMappingURL=loader.css.map */

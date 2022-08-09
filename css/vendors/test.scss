@@ -1,0 +1,107 @@
+
+/* =========================================== */
+/* TextアニメーションCSS コード */
+/* =========================================== */
+
+.st1{
+  stroke: #000; /* 文字色 */
+  fill: none; /* 塗りつぶし無し */
+  stroke-width: 2.5; /* 文字の太さ */
+  stroke-dasharray:  4000; /* 破線の間隔 */
+  stroke-dashoffset: 4000; /* 破線の開始位置 */
+  animation: DASH 8s   forwards; /* アニメーション */
+  // -webkit-animation: DASH 2s  0s forwards;
+}
+
+.logo1{
+  stroke: #000;
+  fill: none;
+  stroke-width: 2.5;
+  stroke-dasharray:  4000;
+  stroke-dashoffset: 4000;
+  animation: DASH 8s ease-in-out alternate 0s forwards;
+  animation-delay: 3s;
+  -webkit-animation: DASH 8s ease-in-out alternate 0s forwards;
+  -webkit-animation-delay: 3s;
+}
+
+.logo2{
+  stroke: #000;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray:  4000;
+  stroke-dashoffset: 4000;
+  animation: DASH 1s ease-in-out alternate 0s forwards;
+  animation-delay: 4s;
+  -webkit-animation: DASH 1s ease-in-out alternate 0s forwards;
+  -webkit-animation-delay: 4s;
+}
+
+@keyframes DASH {
+  0% {
+      stroke-dashoffset: 4000;
+      }
+  100% {
+      stroke-dashoffset: 0;
+      }
+  }
+
+@-webkit-keyframes DASH {
+  0% {
+      stroke-dashoffset: 4000;
+  }
+  100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+// 立体
+  // .swiper-slide {
+  //   width: 300px;
+  // }
+  // .swiper-slide .slide-inner {
+  //   opacity: 0;
+  //   transition: 1.5s all ease;
+  //   width: 100px;
+  //   margin: 30px auto 0;
+  //   position: relative;
+  //   z-index: 1;
+  // }
+  // .swiper-slide.swiper-slide-prev .slide-inner, .swiper-slide.swiper-slide-duplicate-prev .slide-inner, .swiper-slide.swiper-slide-next .slide-inner, .swiper-slide.swiper-slide-duplicate-next .slide-inner {
+  //   opacity: .5;
+  //   width: 200px;
+  //   z-index: 2;
+  // }
+  // .swiper-slide.swiper-slide-prev .slide-inner, .swiper-slide.swiper-slide-duplicate-prev .slide-inner {
+  //           transform: translateX(150px);
+  // }
+  // .swiper-slide.swiper-slide-next .slide-inner, .swiper-slide.swiper-slide-duplicate-next .slide-inner {
+  //           transform: translateX(-150px);
+  // }
+  // .swiper-slide.swiper-slide-active .slide-inner, .swiper-slide.swiper-slide-duplicate-active .slide-inner {
+  //   opacity: 1;
+  //   width: 300px;
+  //   z-index: 3;
+  //   margin: 0;
+  // }
+  // 立体
+
+  // .swiper-slide-duplicate .swiper-slide {
+  //   opacity: 0 !important;
+  //   visibility: hidden !important;
+  //   .slide-inner {
+  //     opacity: 0; // slideの中のインナーにアニメーションを設定する
+  //     transition: all 1s ease-in;
+  //     transform: scale(2);
+  //   }
+  //   &.swiper-slide-duplicate-active {
+  //     opacity: 1 !important;
+  //     visibility: visible !important;
+  //     .slide-inner {
+  //       opacity: 1;
+  //     transition: all 1s ease-in;
+  //     transform: scale(1);
+
+  //     }
+  //   }
+  // }
